@@ -130,14 +130,15 @@ header h3 {
     border: 3px solid white;
     padding: 0px;
     border-radius: 90px;
-    
+    transition: 1s ease-out;
 }
 .sectiong .imgindex:hover{
-    transition: 1.5s;
-    width: 16rem;
-    height: 16rem;
+    transition: 1s;
+    width: 18rem;
+    height: 18rem;
     opacity: 50%;
 }
+
 .footerg h5{
     margin-top: 2rem;
     font-size: 1.5rem;
@@ -219,6 +220,14 @@ header h3 {
     border: 3px solid white;
     padding: 0px;
     border-radius: 90px;
+    transition: 1s ease-out;
+}
+
+.imgprod:hover{
+    transition: 1s;
+    width: 18rem;
+    height: 18rem;
+    opacity: 50%;
 }
 
 /* ESTILOS DE EVENTOS */
@@ -277,6 +286,13 @@ header h3 {
 .sectionev1 img{
     width: 40rem;
     border-radius: 3rem;
+    transition: 1s ease-out;
+}
+.sectionev1 img:hover{
+    transition: 1s;
+    width: 44rem;
+    height: 55rem;
+    opacity: 50%;
 }
 .sectionev1 p{
     font-size: 2rem;
@@ -304,6 +320,13 @@ header h3 {
     width: 40rem;
     height: 40rem;
     border-radius: 3rem;
+    transition: 1s ease-out;
+}
+.sectionev2 img:hover{
+    transition: 1s;
+    width: 44rem;
+    height: 44rem;
+    opacity: 50%;
 }
 .sectionev2 p{
     font-size: 2rem;
@@ -469,6 +492,10 @@ header h3 {
     width: 1-rem;
     height: 6rem;
     margin-right: 2rem;
+    animation-name: girar;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
 }
 
 .face img{
@@ -477,15 +504,61 @@ header h3 {
     margin-right: 5rem;
     position: relative;
     left: 2rem;
+    animation-name: girar;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
 }
 .fono img{
     width: 12rem;
     height: 10rem;
+    animation-name: girar;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
 }
+@keyframes girar{
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
 .face p{
     margin-left: rem;
 }
 
+
+
+
+
+@keyframes cambiocolor {
+
+    25%{
+        color: black;
+    }
+
+    50%{
+        color: white;
+    }
+
+    75%{
+        color: black;
+    }
+
+    100%{
+        color: white
+    }
+
+}
+
+.encontranos{
+    animation-name: cambiocolor;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
 /* RESSPONSIVE INDEX PARA TABLET */
 
 @media screen and (max-width: 768px){
