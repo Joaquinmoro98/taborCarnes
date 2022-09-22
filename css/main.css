@@ -230,8 +230,8 @@ header h3 {
 .contenedore {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr .5fr 2fr .5fr 2fr .6fr;
-  grid-template-areas: "headerev" "menuev " "section1" "music" "section2" "footer"; }
+  grid-template-rows: .3fr 0.3fr 0.6fr 1.5fr 0.3fr 1.5fr 0.2fr;
+  grid-template-areas: "headerev" "menu" "carru" "section1" "music" "section2" "footer"; }
 
 .headerev {
   grid-area: headerev;
@@ -245,24 +245,17 @@ header h3 {
   position: sticky;
   top: 2px; }
 
-.ulmenueventos {
+.carousel {
+  grid-area: carru;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  list-style: none;
-  background-color: black;
-  grid-area: menuev; }
-
-.ulmenueventos a {
-  text-decoration: none;
-  color: white; }
-
-.ulmenueventos li {
-  font-size: 2.5rem;
-  margin: 8px;
-  border: 1px solid white;
-  border-radius: 12px;
-  padding: 0.7rem; }
+  flex-direction: row;
+  justify-content: center; }
+  .carousel img {
+    width: 55rem;
+    height: 25rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    margin-left: 40rem; }
 
 .sectionev1 {
   grid-area: section1;
@@ -270,21 +263,19 @@ header h3 {
   flex-flow: row;
   justify-content: space-evenly;
   align-items: center; }
-
-.sectionev1 img {
-  width: 40rem;
-  border-radius: 3rem;
-  transition: 1s ease-out; }
+  .sectionev1 img {
+    width: 40rem;
+    border-radius: 3rem;
+    transition: 1s ease-out; }
+  .sectionev1 p {
+    font-size: 2rem;
+    width: 50%; }
 
 .sectionev1 img:hover {
   transition: 1s;
   width: 44rem;
   height: 55rem;
   opacity: 50%; }
-
-.sectionev1 p {
-  font-size: 2rem;
-  width: 50%; }
 
 .music {
   grid-area: music;
@@ -338,25 +329,8 @@ header h3 {
 .menuhistoria {
   position: sticky;
   top: 2px;
-  grid-area: menuhist; }
-
-.ulmenuhistoria {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  list-style: none;
+  grid-area: menuhist;
   background-color: black; }
-
-.ulmenuhistoria a {
-  text-decoration: none;
-  color: white; }
-
-.ulmenuhistoria li {
-  font-size: 2.5rem;
-  margin: 8px;
-  border: 1px solid white;
-  border-radius: 12px;
-  padding: 0.7rem; }
 
 .secthist {
   grid-area: secthist;
@@ -390,25 +364,8 @@ header h3 {
 .menuco {
   position: sticky;
   top: 2px;
-  grid-area: menuco; }
-
-.ulmenuco {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  list-style: none;
+  grid-area: menuco;
   background-color: black; }
-
-.ulmenuco a {
-  text-decoration: none;
-  color: white; }
-
-.ulmenuco li {
-  font-size: 2.5rem;
-  margin: 8px;
-  border: 1px solid white;
-  border-radius: 12px;
-  padding: 0.7rem; }
 
 .sectcont1 {
   grid-area: sectcont1;
@@ -587,8 +544,8 @@ header h3 {
   .contenedorp {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr .7fr 4fr 0.5fr;
-    grid-template-areas: "header header" "menu menu " "section section" "footer footer"; }
+    grid-template-rows: 1fr .5fr 4fr 0.5fr;
+    grid-template-areas: "header header" "menu menu" "section section" "footer footer"; }
   .menudecortes {
     display: flex;
     flex-direction: row;
