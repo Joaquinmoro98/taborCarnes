@@ -1,0 +1,147 @@
+/* ESTILOS DEL INDEX */
+
+body{
+    background-color: #3E0609;
+    color: white;
+    font-family: 'Aboreto', cursive; 
+}
+.tabletbuscado{
+    grid-area: masbuscado;
+    display: none;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr .4fr 2.5fr 0.5fr;
+    grid-template-areas:
+    "header header"
+    "menu menu"
+    "section section"
+    "footer footer" 
+    ;
+}
+
+
+.headerg{
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    h1{
+        margin-top: 1rem;
+        font-size: 5rem;
+        }
+        .imglogo{
+            width: 15rem;
+        height:15rem;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+        }
+        h3 {
+            font-style: italic;
+        }
+
+}
+
+
+.menu{
+    grid-area: menu;
+    position: sticky;
+    top: 2px;
+    background-color: black;
+}
+
+.menu-display{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    justify-content: space-around;
+}
+
+.menu-contenedor{
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-items{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    a{
+        color: white;
+        padding: 1rem 2rem;
+        border:solid white;
+        border-radius: 2rem;
+    }
+}
+.dropdown-menu{
+    background-color: black;
+}
+
+.sectiong{
+    grid-area: section;
+    display: flex;   
+    flex-flow: column;
+    justify-content: space-evenly;
+    margin: 0rem 3rem;
+    h3{
+        font-size: 3rem;  
+        margin-left: 10rem;
+    }
+}
+
+.formind{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.ulindex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.sectiong .imgindex{
+    width: 15rem;
+    height: 15rem;
+    border: 3px solid white;
+    padding: 0px;
+    border-radius: 90px;
+    transition: 1s ease-out;
+}
+.sectiong .imgindex:hover{
+    transition: 1s;
+    width: 18rem;
+    height: 18rem;
+    opacity: 50%;
+}
+.footerg{
+    grid-area: footer;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    h5{
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 3rem;
+    }
+    input{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
+
+

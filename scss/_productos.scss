@@ -1,0 +1,46 @@
+/* ESTILOS DE PRODUCTOS*/
+
+.contenedorp{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr .4fr 4fr 0.5fr;
+    grid-template-areas:
+    "header header"
+    "menu menu "
+    "section section"
+    "footer footer" 
+    ;
+}
+
+.sectionp{
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    h3{
+        font-size: 2rem;
+        margin-left: 10rem;
+    }
+}
+.ulproduct{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.imgprod{
+    width: 15rem;
+    height: 15rem;
+    border: 3px solid white;
+    padding: 0px;
+    border-radius: 90px;
+    transition: 1s ease-out;
+}
+
+.imgprod:hover{
+    transition: 1s;
+    width: 18rem;
+    height: 18rem;
+    opacity: 50%;
+}

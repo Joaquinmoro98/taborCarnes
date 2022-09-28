@@ -1,0 +1,116 @@
+/* ESTILOS DE EVENTOS */
+.contenedore {
+    display: grid;
+      grid-template-columns: 1fr  ;
+      grid-template-rows: .3fr 0.3fr 0.6fr 1.5fr 0.3fr 1.5fr 0.2fr ;
+      grid-template-areas: 
+      "headerev"
+      "menu"
+      "carru"
+      "section1"
+      "music"
+      "section2"
+      "footer"
+      ; }
+  
+  .headerev {
+    grid-area: headerev;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem; 
+    img{
+        width: 15rem;
+        height:15rem;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+    h1{
+        margin-top: 1rem;
+        font-size: 5rem;
+        }
+}
+  
+  .menueventos {
+    position: sticky;
+    top: 2px; }
+  
+    .carousel{
+      grid-area: carru;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      img{
+        width: 55rem;
+        height: 25rem;
+        margin-top: 7rem;
+        margin-bottom: 7rem;
+        margin-left: 40rem;
+      
+      }
+    }
+  
+  
+  
+  .sectionev1 {
+    grid-area: section1;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center; 
+    
+    img {
+      width: 40rem;
+      border-radius: 3rem;
+      transition: 1s ease-out; }
+
+    p {
+        font-size: 2rem;
+        width: 50%; }
+}
+  
+  
+  .sectionev1 img:hover {
+    transition: 1s;
+    width: 44rem;
+    height: 55rem;
+    opacity: 50%; }
+  
+  
+  
+  .music {
+    grid-area: music;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem; }
+ }
+  
+  .sectionev2 {
+    grid-area: section2;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center; 
+    p {
+        font-size: 2rem;
+        width: 50%; }
+}
+  
+  .sectionev2 img {
+    width: 40rem;
+    height: 40rem;
+    border-radius: 3rem;
+    transition: 1s ease-out; }
+  
+  .sectionev2 img:hover {
+    transition: 1s;
+    width: 44rem;
+    height: 44rem;
+    opacity: 50%; }
+  
