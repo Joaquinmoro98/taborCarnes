@@ -44,3 +44,25 @@
     height: 18rem;
     opacity: 50%;
 }
+.padingpollo{
+    color:black ;
+}
+.padingpicada{
+    color: black;
+}
+
+/* Maps */
+
+$productos : (
+    vaca: black,
+    pollo: white,
+    bebida: black,
+    picada: white,
+    size: 50px
+);
+
+@each $product, $color in $productos {
+    .pading#{$product}{
+        background-color: $color;
+    }
+}

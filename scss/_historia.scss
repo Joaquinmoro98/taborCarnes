@@ -36,6 +36,11 @@
     top: 2px;
     grid-area: menuhist;
     background-color: black;
+    .btn{
+        color: white;
+        border: solid white 2px;
+        border-radius: 5px;
+       }
 }
 
 .secthist{
@@ -51,4 +56,12 @@
         font-size: 2rem;
         margin-bottom: 3rem;
     }
+}
+
+$titulo : (
+    color: black
+);
+
+.titulohistoria{
+    background-color: map-get($titulo, colorn);
 }
