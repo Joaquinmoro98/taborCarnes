@@ -35,8 +35,12 @@ body{
         font-size: 5rem;
         }
         .imglogo{
-            @include imglogoprincipal(15rem, 15rem, 1rem, 2rem)
+            width: 15rem; 
+            height: 15rem; 
+            margin-bottom: 1rem; 
+            margin-top: 2rem;  
         }
+        
         h3 {
             font-style: italic;
         }
@@ -153,10 +157,12 @@ body{
     }
 }
 
+/*
 @mixin imglogoprincipal($ancho, $alto, $marginb, $margint){
     width: $ancho;
     height: $alto;
     margin-bottom: $marginb;
     margin-top: $margint;
 }
+*/
 

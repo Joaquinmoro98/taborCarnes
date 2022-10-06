@@ -127,6 +127,14 @@ body {
     padding-right: 4px;
     border: 2px solid white; }
 
+/*
+@mixin imglogoprincipal($ancho, $alto, $marginb, $margint){
+    width: $ancho;
+    height: $alto;
+    margin-bottom: $marginb;
+    margin-top: $margint;
+}
+*/
 /* ESTILOS DE PRODUCTOS*/
 .contenedorp {
   display: grid;
@@ -464,13 +472,6 @@ body {
   animation-delay: 2s;
   animation-iteration-count: infinite; }
 
-html {
-  font-size: 62.5%; }
-
-* {
-  margin: 0;
-  padding: 0; }
-
 /* RESSPONSIVE INDEX PARA TABLET */
 @media screen and (max-width: 768px) {
   .contenedor {
@@ -492,7 +493,9 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .navbar {
+    color: white; } }
 
 /* RESPONSIVE INDEX PARA CELULAR */
 @media screen and (max-width: 370px) {
@@ -543,7 +546,9 @@ html {
     height: 10rem;
     opacity: 50%; }
   .footerg h3 {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .navbar {
+    color: white; } }
 
 /* RESPONSIVE PRODUCTOS PARA TABLET*/
 @media screen and (max-width: 768px) {
@@ -563,7 +568,9 @@ html {
     margin-top: 3px; }
   .sectionp .imgprod {
     width: 12rem;
-    height: 12rem; } }
+    height: 12rem; }
+  .navbar {
+    color: white; } }
 
 /* RESPONSIVE PRODUCTOS PARA CELULA R*/
 @media screen and (max-width: 370px) {
@@ -602,3 +609,10 @@ html {
   .sectionp h3 {
     margin-left: 6rem;
     margin-bottom: 2rem; } }
+
+html {
+  font-size: 62.5%; }
+
+* {
+  margin: 0;
+  padding: 0; }
